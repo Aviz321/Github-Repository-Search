@@ -1,0 +1,24 @@
+<h1>Github Repository Search</h1>
+<input class="SearchText" #searchText placeholder="Search Here...">
+<input type="button" (click)="SearchRepository(searchText.value)" value="Click To Find">
+
+  <table border="1" class="RepositoryTable" *ngIf="RepositoryData?.items">
+   <thead>
+  <th>Name</th>
+  <th>Avatar</th>
+  <th>Bookmark</th>
+  <th>Send Email</th>
+    </thead>
+    <tbody >
+      <tr *ngFor="let i of RepositoryData.items">
+        <td>{{i.name}}</td>
+        <td>
+          <img src="{{i.owner.avatar_url}}" class="AvatarImage"></td>
+        <td>
+          <button (click)="saveBookmark(i)">Add BookMark</button></td>
+        <td>
+          <button mat-button (click)="OpenDialog(i.owner.url)">Click To Send Email</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

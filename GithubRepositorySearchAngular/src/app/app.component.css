@@ -1,0 +1,16 @@
+.AvatarImage
+{
+height: 80px;
+width: 80px;
+
+}
+.RepositoryTable
+{
+  margin: auto;
+}
+.SearchText{
+  margin-left: 41%;
+}
+h1{
+  text-align: center;
+}
