@@ -1,3 +1,6 @@
-in the part of "send email" it will open the windows outlock and send the email from there.
+first you need to check that the angular project have all the liberaries that i added like angular material that used for the dialog box that pops up when you click on the "send email"
+button.
+in the part of "send email" it will open a dialog box and when you enter some email and click on the button, the windows outlock app will appear and send the email with
+all the data on the user you chose.
 in the bookmark session you will need to open the ASP.NET application and run it first and only than to press the bookmark button.
 the ASP.NET application recived the data but i couldn't store it into the session. 
